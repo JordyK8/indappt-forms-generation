@@ -133,6 +133,3 @@ dist
 
 # Build distribution directory
 dist/
-
-# Key acces files
-google-auth-access-key.json

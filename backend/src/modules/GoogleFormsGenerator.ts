@@ -223,22 +223,13 @@ export default class GoogleFormCreator {
         }
 
     }
-    async setFormOpen(formId: string) {
-        await this.authenticate();
-
-        const res = await this.forms.forms.batchUpdate({
-            formId,
-            requestBody: {
-                requests: [{
-                    settings: {
-                        isLive: true
-                    }
-                }]
-            }
-        });
-
-        console.log('Form is now open');
-    }
+    // async publishFormAndEmailToTeamToFillOut(formId: string, emails: string[]) {
+    //     // Send email to team members
+    //     for (const email of emails) {
+    //         const message = `Hello, please fill out the following form: https://docs.google.com/forms/d/${formId}`;
+    //         console.log(`Sending email to ${email}: ${message}`);
+    //     }
+    // }
 
 }
 

@@ -133,3 +133,5 @@ dist
 
 # Build distribution directory
 dist/
+
+google-auth-access-key.json
